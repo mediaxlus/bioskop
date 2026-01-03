@@ -25,7 +25,7 @@ export default async function handler(req, res) {
       <html>
       <head>
         <title>${title}</title>
-        <meta property="og:title" content="NONTON q: ${title}">
+        <meta property="og:title" content="NONTON : ${title}">
         <meta property="og:description" content="${description}">
         <meta property="og:image" content="${image}">
         <meta property="og:type" content="video.movie">
