@@ -13,7 +13,7 @@ export default async function handler(req, res) {
     const data = await response.json();
 
     const title = data.title || "Nonton Film Gratis";
-    const description = data.overview || "Streaming gratis dengan kualitas HD di ID MOVIE.";
+    const description = data.overview || "Streaming gratis tanpa batas dengan kualitas HD di ID MOVIE.";
     const image = data.backdrop_path 
       ? `https://image.tmdb.org/t/p/original${data.backdrop_path}`
       : `https://mediaxlus.github.io/Idmovie/poster.jpg`; // Gambar cadangan
