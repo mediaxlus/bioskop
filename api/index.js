@@ -19,7 +19,7 @@ export default async function handler(req, res) {
     const title = data.title ? data.title.toUpperCase() : "NONTON FILM GRATIS";
     const description = data.overview 
       ? data.overview.substring(0, 160) + "..." 
-      : "Streaming film kualitas HD subtitle Indonesia gratis tanpa pendaftaran.";
+      : "Streaming film kualitas HD, gratis tanpa batas.";
     
     // Gambar Backdrop (w780 supaya ringan buat WhatsApp)
     const image = data.backdrop_path 
@@ -36,7 +36,7 @@ export default async function handler(req, res) {
         <title>${title} - ID MOVIE</title>
         
         <meta property="og:type" content="video.movie">
-        <meta property="og:title" content="▶️ NONTON: ${title}">
+        <meta property="og:title" content="NONTON: ${title}">
         <meta property="og:description" content="${description}">
         <meta property="og:image" content="${image}">
         <meta property="og:url" content="${githubUrl}?id=${m}">
